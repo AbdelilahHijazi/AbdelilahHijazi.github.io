@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abdelilah Hijazi Personal PortFolio</title>
+    <link rel="stylesheet" href="index.css" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@1,400;1,700&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lemonada:wght@400;700&display=swap" rel="stylesheet">
+
+
+
+</head>
+
+<body>
+
+    <header>
+        <a href="index.html" class="logo"><i>Abdelilah Hijazi</i></a>
+        <nav class="navigation">
+            <i>
+                <a href="index.html" target="_blank">Home</a>
+                <a href="about_me.html" target="_blank">About Me</a>
+                <a href="my_portfolio.html" target="_blank">My Portfolio</a>
+                <a href="images/my_cv.jpg" target="_blank" onclick="playMusic()">My Resume</a>
+                <a href="contact_me.html" target="_blank">Contact Me</a>
+            </i>
+        </nav>
+    </header>
+
+
+    <section class="main">
+        <div class="introducing_my_self">
+            <h1>Welcome, I'm Abdelilah Hijazi</h1>
+            <h2>I am a Web-Mobile Developer, graphic Designer & graphics animator</h2>
+            <a class="my_CV" href="images/my_cv.jpg" target="blank">Download my CV resume</a>
+        </div>
+
+        <br height="200px">
+
+        <div class="username">
+            <form>
+                <h3 id="your_opinion">Your Opinion is Valuable</h3>
+                <p>user name</p><input type="username" placeholder="enter your name">
+                <p>user email</p><input type="email" placeholder="enter your email">
+                <p>user opinion</p><textarea placeholder="please write your opinion"></textarea><br>
+                <button class="submit" type="submit">submit</button>
+            </form>
+        </div>
+
+        <div class="audio">
+            <audio src="audio/indexmusic.mp3" type="audio/mpeg" id="music" preload="auto" autoplay loop
+                controls></audio>
+        </div>
+    </section>
+    <script>function playMusic() {
+            var audio = new Audio('audio/myresumemusic.mp3');
+            audio.play();
+        }</script>
+</body>
+</html>

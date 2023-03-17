@@ -1,0 +1,85 @@
+body {
+    height: 100%;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    background: url("images/About_Me.JPG");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    font-family: 'Amaranth', sans-serif;
+}
+
+div {
+    margin: 20px;
+    padding: 20px;
+    border: solid white 10px;
+    border-radius: 20px;
+    box-shadow: 0 0 5px rgb(238, 240, 123);
+    animation: glow 2s ease-in-out infinite;
+}
+
+
+@keyframes glow {
+    from {
+        box-shadow: 0 0 5px rgb(238, 240, 123);
+    }
+
+    to {
+        box-shadow: 0 0 20px rgb(238, 240, 123);
+    }
+}
+
+.glowheading {
+    color: #fff;
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #5E7EBE, 0 0 50px #5E7EBE, 0 0 60px #5E7EBE;
+    animation: glowing 3s ease-in-out infinite;
+}
+
+@keyframes glowing {
+    0% {
+        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #5E7EBE, 0 0 50px #5E7EBE, 0 0 60px #5E7EBE;
+    }
+
+    50% {
+        text-shadow: none;
+    }
+
+    100% {
+        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #5E7EBE, 0 0 50px #5E7EBE, 0 0 60px #5E7EBE;
+    }
+}
+
+h1 {
+    padding: 10px;
+    color: white;
+    font-size: 50px;
+    font-weight: bold;
+    word-spacing: 5px;
+    text-align: center;
+}
+
+p {
+    padding: 10px;
+    color: white;
+    font-size: 30px;
+    font-weight: 700;
+    word-spacing: 5px;
+    align-content: center;
+    text-align: justify;
+    line-height: 60px;
+}
+
+h2 {
+    padding: 10px;
+    color: white;
+    font-size: 50px;
+    font-weight: bold;
+    word-spacing: 5px;
+    text-align: right;
+}
+
+audio {
+    display: none;
+}

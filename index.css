@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lemonada:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+header {
+    background-image: url("images/header_background.jpg");
+    background-size: cover;
+    width: 100%;
+    position: fixed;
+    z-index: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px;
+    font-family: 'Fuzzy Bubbles', cursive;
+
+}
+
+.logo {
+    text-decoration-line: none;
+    color: rgb(255, 255, 255);
+    font-size: 2.2em;
+    font-weight: bolder;
+    padding-right: 60px;
+}
+
+.logo :hover {
+    color: rgb(200, 50, 50);
+    font-size: 125%;
+    font-stretch: expanded;
+    transition-duration: 0.5s;
+}
+
+.navigation a {
+    text-decoration-line: none;
+    color: rgb(255, 255, 255);
+    font-size: 1.5em;
+    font-weight: 700px;
+    padding-left: 30px;
+}
+
+.navigation a:hover {
+    color: rgb(245, 255, 15);
+    font-size: xx-large;
+    font-stretch: expanded;
+    transition-duration: 0.5s;
+}
+
+section {
+    padding: 200px 200px;
+}
+
+.main {
+    width: 100%;
+    min-height: 100vh;
+    display: inline-block;
+    align-items: center;
+    background: url(images/My_Photo_PW.JPG) no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding-top: 150px;
+}
+
+.introducing_my_self {
+    font-family: 'Philosopher', sans-serif;
+    color: rgb(255, 255, 255);
+}
+
+.introducing_my_self :hover {
+    color: rgb(217, 186, 17);
+    text-shadow: 20px;
+    transform: scale(1.25);
+    transition-duration: 0.5s;
+}
+
+.main h1 {
+    font-size: 1.6em;
+    font-weight: 800px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    letter-spacing: 2px;
+    line-height: 50px;
+}
+
+.main h2 {
+    font-size: 1.6em;
+    font-weight: 800px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    letter-spacing: 2px;
+    line-height: 50px;
+}
+
+.my_CV {
+    background-color: rgb(17, 18, 176);
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    letter-spacing: 2px;
+    font-size: 1.5 em;
+    font-weight: 700;
+    display: inline-block;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 20px;
+    border-style: hidden;
+    border-width: 1px;
+    transition: 1 ease;
+}
+
+.username {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    display: flexbox;
+    font-family: 'Lemonada', cursive;
+    padding: 5px;
+}
+
+#your_opinion {
+    color: white;
+    font-size: 30px;
+    font-weight: bolder;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    letter-spacing: 2px;
+}
+
+#your_opinion:hover {
+    color: rgb(200, 50, 50);
+    letter-spacing: 2px;
+    font-stretch: extra-expanded;
+    transform: scale(1.25);
+    transition-duration: 0.5s;
+    text-align: justify;
+}
+
+p {
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+P:hover {
+    color: rgb(245, 255, 15);
+    font-stretch: extra-expanded;
+    transform: scale(1.25);
+    letter-spacing: 2px;
+    transition-duration: 0.5s;
+    text-align: justify;
+}
+
+input {
+    background-color: white;
+    color: black;
+    font-size: 20px;
+    font-weight: 500px;
+    border-radius: 10px;
+    border-style: hidden;
+    letter-spacing: 2px;
+    min-height: 1cm;
+}
+
+textarea {
+    background-color: white;
+    color: black;
+    font-size: 15px;
+    font-weight: 400px;
+    border-radius: 10px;
+    border-style: hidden;
+    letter-spacing: 2px;
+    min-width: 10cm;
+    min-height: 5cm;
+}
+
+.submit {
+    font-size: 20px;
+    font-weight: 500px;
+    margin-top: 10px;
+    margin-bottom: 10 px;
+    padding: 5px;
+    background-color: rgb(17, 18, 176);
+    color: white;
+    box-sizing: content-box;
+    border-style: hidden;
+    border-radius: 20px;
+}
+
+.submit:hover {
+    color: rgb(217, 186, 17);
+    text-shadow: 20px;
+    transform: scale(1.25);
+    transition-duration: 0.5s;
+}
+
+.audio {
+    margin-top: 50px;
+    padding-top: 50px;
+}
+
+audio {
+    position: relative;
+    background-position-y: bottom;
+    display: flex;
+    z-index: 1;
+    opacity: 0.5;
+    width: 100%;
+}

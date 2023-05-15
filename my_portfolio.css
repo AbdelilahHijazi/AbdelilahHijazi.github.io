@@ -30,8 +30,8 @@ h1 {
 
 h1:hover {
     color: #C196CE;
-    transition: transform 0.25s ease-out;
-    transform: rotate(-5deg) scale(1.5);
+    transition: transform 0.25s 0s linear;
+    transform: translate(-40px, -40px) scale(1.5) skew(-5deg, -5deg);
     text-shadow: 0 0 20px white;
 }
 
@@ -50,11 +50,20 @@ a {
 
 a:hover {
     color: #C196CE;
-    transition: transform 0.25s ease-out;
-    transform: rotate(-5deg) scale(1.5);
-    text-shadow: 0 0 20px #05056b;
+    transition: transform 0.25s 0s linear;
+    transform: translate(-40px, -40px) scale(1.5) skew(-5deg, -5deg);
+    text-shadow: 0 0 30px rgb(89, 238, 248);
+}
+
+
+#music {
+    position: fixed;
+    top: 125px;
+    right: 0px;
+    z-index: 1000;
+    opacity: 30%;
 }
 
 audio {
-    display: none;
+    width: 225px;
 }

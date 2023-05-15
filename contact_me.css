@@ -23,12 +23,12 @@ body {
 h1 {
     font-size: 50px;
     font-weight: bolder;
+    text-shadow: 5px 0px 0px white;
 }
 
 h1:hover {
-    transition: transform 0.25s ease-out;
-    transform: rotate(-5deg) scale(1.5);
-    text-shadow: 0 0 20px white;
+    transform: translate(-20px, -20px) skew(-5deg, -5deg) scale(1.5);
+    transition: transform 0.1s 0.25s ease;
 }
 
 .icons {
@@ -36,10 +36,10 @@ h1:hover {
     width: 50px;
 }
 
-.icons:hover {
+/*.icons:hover {
     transition: transform 0.25s ease-out;
     transform: scale(1.5);
-}
+}*/
 
 .list {
     font-size: 30px;
@@ -49,35 +49,19 @@ h1:hover {
     flex-direction: column;
 }
 
-#icon1 {
+
+li {
     display: inline-flex;
     align-items: center;
     justify-content: flex-start;
 }
 
-#icon2 {
-    display: inline-flex;
-    align-items: center;
-    justify-content: flex-start;
+li:hover {
+    font-size: 125%;
+    font-stretch: expanded;
+    transition-duration: 0.5s;
 }
 
-#icon3 {
-    display: inline-flex;
-    align-items: center;
-    justify-content: flex-start;
-}
-
-#icon4 {
-    display: inline-flex;
-    align-items: center;
-    justify-content: flex-start;
-}
-
-#icon5 {
-    display: inline-flex;
-    align-items: center;
-    justify-content: flex-start;
-}
 
 a {
     color: #0000fe;
@@ -85,24 +69,15 @@ a {
     text-decoration: wavy;
 }
 
-#icon1:hover {
-    font-size: 125%;
-    font-stretch: expanded;
-    transition-duration: 0.5s;
-}
 
-#icon2:hover {
-    font-size: 125%;
-    font-stretch: expanded;
-    transition-duration: 0.5s;
-}
-
-a:hover {
-    font-size: 125%;
-    font-stretch: expanded;
-    transition-duration: 0.5s;
+.audio {
+    position: fixed;
+    top: 100px;
+    right: 10px;
+    z-index: 1000;
+    opacity: 30%;
 }
 
 audio {
-    display: none;
+    width: 225px;
 }

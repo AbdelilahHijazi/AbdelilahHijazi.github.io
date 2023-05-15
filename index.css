@@ -200,15 +200,13 @@ textarea {
 }
 
 .audio {
-    margin-top: 50px;
-    padding-top: 50px;
+    position: fixed;
+    top: 100px;
+    right: 20px;
+    z-index: 1000;
+    opacity: 30%;
 }
 
 audio {
-    position: relative;
-    background-position-y: bottom;
-    display: flex;
-    z-index: 1;
-    opacity: 0.5;
-    width: 100%;
+    width: 225px;
 }
